@@ -4,6 +4,11 @@
   <artifactId>ssgsems</artifactId>
   <version>0.0.2-SNAPSHOT</version>
   <packaging>war</packaging>
+  <properties>
+    <sonar.projectKey>vois-ritesh-sc-proj</sonar.projectKey>
+    <sonar.organization>vois-ritesh-sonarcloud</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
