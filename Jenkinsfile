@@ -7,6 +7,8 @@ pipeline {
         archiveArtifacts(artifacts: '**/target/*.war', fingerprint: true)
         sh '''mkdir /home/vois_ritesh/buildoutput/${BUILD_NUMBER}
 
+chmod 777 /home/vois_ritesh/buildoutput/${BUILD_NUMBER}
+
 cp **/target/*.war /home/vois_ritesh/buildoutput/${BUILD_NUMBER}'''
       }
     }
